@@ -19,3 +19,13 @@ app.use('/tasks', TaskRouter);
 app.listen(PORT, () => {
     console.log(`Server is running on PORT=${PORT}`);
 });
+const mongoose = require('mongoose');
+
+
+
+mongoose.connect(process.env.MONGO_URL)
+    .then(() => {
+        console.log('MongoDB is Connected...');
+    }).catch((err) => {
+        console.log('MongoDB Conn Error...', err);
+    })
