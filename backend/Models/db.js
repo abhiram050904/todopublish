@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URL = "mongodb+srv://abhiram050904:abhi@abhicluster.hi0upel.mongodb.net/?retryWrites=true&w=majority&appName=abhicluster";
+const DB_URL =
 
 mongoose.connect(DB_URL)
     .then(() => {
